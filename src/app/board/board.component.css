@@ -1,0 +1,9 @@
+.board {
+    background-color: black;
+    height: 584px;
+}
+.money {
+    display: inline-block;
+    position: absolute;
+    top: 27%;
+}

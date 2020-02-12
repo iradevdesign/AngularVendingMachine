@@ -1,0 +1,17 @@
+.display {
+    background-color: #87cefa;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 144px;
+    box-sizing: border-box;
+    margin-left: 8px;
+    position: absolute;
+    top: 23px;
+}
+.displayInsert {
+    font-weight: bold;
+}
+.addMoneyWarning {
+    font-weight: bold;
+}

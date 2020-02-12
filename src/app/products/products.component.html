@@ -1,0 +1,4 @@
+<div class="products">
+    <app-product *ngFor="let product of products" [product]="product" (selectedProduct)="selectProduct($event)"></app-product>
+    <app-product-bought [productBought]="productBought" [productBoughtImg]="productBoughtImg"></app-product-bought>
+</div>

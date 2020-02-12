@@ -1,0 +1,6 @@
+<div class="board">
+    <app-display [ballance]="ballance" [code]="code" [addMoneyWarning]="addMoneyWarning"></app-display>
+    <div class="money">
+        <app-addmoney *ngFor="let money of addMoney" [money]="money" (selectedMoney)="selectMoney($event)"></app-addmoney>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.productBought {
+    background-color: black;
+    width: 94%;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+.productBoughtItem {
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 31%;
+}

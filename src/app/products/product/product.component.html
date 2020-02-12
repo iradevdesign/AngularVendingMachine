@@ -1,0 +1,7 @@
+<div class="product" (click)="selectProduct(product)">
+    <img [src]="product.img" alt="" class="productImg">
+    <p class="productQuantity" *ngIf="product.quantity >= 1">{{ product.quantity }}x</p>
+    <p class="productQuantity" *ngIf="product.quantity < 1" style="font-size: 10px;">OUT</p>
+    <p class="productPrice">${{ product.price }}</p>
+    <p class="productCode">{{ product.code }}</p>
+</div>
