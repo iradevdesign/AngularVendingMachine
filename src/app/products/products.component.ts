@@ -6,7 +6,7 @@ import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  @Output() selectedProducts = new EventEmitter<{img: string, quantity: number, price: number, code: string}>();
+  @Output() selectedProducts = new EventEmitter<{img: string, quantity: number, price: number, code: string, outOfStock: boolean}>();
   @Input() products;
   @Input() productBought;
   @Input() productBoughtImg;
@@ -15,7 +15,7 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-selectProduct(product: {img: string, quantity: number, price: number, code: string}) {
+selectProduct(product: {img: string, quantity: number, price: number, code: string, outOfStock: boolean}) {
   this.selectedProducts.emit(product)
 }
 }
